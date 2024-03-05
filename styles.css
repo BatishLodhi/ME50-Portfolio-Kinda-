@@ -1,0 +1,266 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/* background image */
+body {
+    overflow-y: hidden;
+    background-image: url('images/bg.webp');
+    background-position: center;
+    background-repeat: repeat;
+}
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* navbar logo */
+nav h2 {
+    color: white;
+    font-size: 33px;
+    -webkit-text-stroke: 0.5px #000000;
+    font-family: 'Bangers', system-ui;
+    letter-spacing: 5px;
+}
+
+nav span {
+    color: #08b13b;
+}
+
+/* navbar contact button */
+nav button {
+    border: 3px double #054719;
+    border-radius: 30px;
+    padding: 6px 10px;
+    background-color: #08b13b;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button a {
+    color: white;
+    text-decoration: none;
+}
+
+nav button a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+nav button:hover {
+    background-color: #09812d;
+}
+/* navbar links */
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1% 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #08b13b;
+}
+/* Home page content */
+.content {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    color: #08b13b;
+    line-height: 1.5;
+}
+
+.content h1 {
+    -webkit-text-stroke: 1px #000000;
+    font-size: 65px;
+    letter-spacing: 1px;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.content h1:hover {
+    transition: all 0.3s ease;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.content h2 {
+    font-weight: bold;
+    margin-left: 22%;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: 'Bad Script', cursive;
+}
+
+.content h3 {
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: 'Bad Script', cursive;
+}
+
+/* ABOUT PAGE */
+.head-about {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: 3%;
+    -webkit-text-stroke: 2px #000000;
+}
+
+.head-about span {
+    color: #08b13b;
+    margin-left: 1%;
+}
+/* about page cards */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.card {
+    border: 5px solid #033010;
+    border-radius: 50px;
+    background-color: #054d1a;
+    color: white;
+    margin: 0% 2%;
+}
+
+.card-img-top {
+    width: 100%; /*278px*/
+    height: 200px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* SKILLS PAGE */
+.head-skills {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: 3%;
+    -webkit-text-stroke: 2px #000000;
+}
+
+.head-skills span {
+    color: #08b13b;
+    margin-left: 1%;
+}
+/* skills page cards */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.img-fluid {
+    width: 100%; /*210px*/
+    height: 160px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/* CONTACT PAGE */
+.head-contact {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: 2%;
+    -webkit-text-stroke: 2px #000000;
+}
+
+.head-contact span {
+    color: #08b13b;
+    margin-left: 1%;
+}
+
+.b-head-contact {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 1%;
+    -webkit-text-stroke: 1px #000000;
+}
+/* Info card */
+.info {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Form card */
+.inp {
+    display: flex;
+    flex-direction: column;
+    background-color: #054d1a;
+    border: 5px solid #033010;
+    border-radius: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2%;
+}
+/* Form divs */
+.sect {
+    margin-left: 27%;
+    padding: 1%;
+}
+/* Form button */
+.form_btn {
+    border: 3px solid #033010;
+    color: #033010;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form_btn:hover {
+    color: white;
+    background-color: #033010;
+}
+/* Form images */
+.imgs {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+form div a img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 25%;
+    height: 27%;
+}
